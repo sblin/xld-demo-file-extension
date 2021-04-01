@@ -15,3 +15,7 @@ Cet exemple a été ecrit dans un objectif de démonstration et n'a pas été va
 
 Un nouveau type d'artifact est disponible : imsa > File
 
+![Nouveau type](images/file.png)
+
+![Propriétés](images/file2.png)
+
