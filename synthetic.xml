@@ -5,20 +5,20 @@
 <synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 
-    <type type="imsa.DeployedArtifact" extends="udm.BaseDeployedArtifact"
+    <type type="mycompany.DeployedArtifact" extends="udm.BaseDeployedArtifact"
             container-type="overthere.SshHost"
-            deployable-type="imsa.File">
-        <generate-deployable type="imsa.File" extends="file.Archive" />
+            deployable-type="mycompany.File">
+        <generate-deployable type="mycompany.File" extends="file.Archive" />
         <property name="postProcessing"
                 label="Run a postProcessing script"
                 description="Run a script after the file deployment"
                 kind="boolean"
-                category="iMSA" 
+                category="My file properties" 
                 required="false" />
         <property name="script"
                 description="Specify a script to override the default postProcessing script"
                 label="Script (override)"
-                category="iMSA" 
+                category="My file properties" 
                 required="false"/>
     </type>
   

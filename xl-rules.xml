@@ -5,9 +5,9 @@
 <rules xmlns="http://www.xebialabs.com/xl-deploy/xl-rules">
     <!-- Add your <rule ...> and <disable-rule ...> elements here -->
 
-  <rule name="imsa.File.CREATE" scope="deployed">
+  <rule name="mycompany.File.CREATE" scope="deployed">
     <conditions>
-      <type>imsa.DeployedArtifact</type>
+      <type>mycompany.DeployedArtifact</type>
       <operation>CREATE</operation>
       <operation>MODIFY</operation>
       <expression>deployed.postProcessing</expression>
@@ -16,7 +16,7 @@
       <os-script>
         <description expression="true">"Deploying " + deployed.name</description>
         <order>70</order>
-        <script>imsa/file-create</script>
+        <script>mycompany/file-create</script>
       </os-script>
     </steps>
   </rule>

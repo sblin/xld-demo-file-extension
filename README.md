@@ -1,21 +1,33 @@
 # xld-demo-file-extension
 
-Exemple de définition d'un nouveau type d'artifact qui hérite de File de façon à pouvoir lancer l'exécution d'un script après le déploiement d'un fichier.
+This is a sample definition of a new Digital.ai Deploy artifact, inheriting from the default File in order to run a command after the deployment of a file.
 
-## Limite
+## Limitation
 
-Cet exemple a été ecrit dans un objectif de démonstration et n'a pas été validé pour une mise en production.
+This a sample only, please do not use in production (not designed to manage all use cases)
 
-## Installation
+## Installation steps
 
-- Copier le contenu du fichier synthetic.xml dans celui présent dans le répertoire <deploy_dir>/ext (si absent, copier le fichier)
-- Copier le contenu du fichier xl-rules.xml dans celui présent dans le répertoire <deploy_dir>/ext (si absent, copier le fichier)
-- Copier le répertoire imsa dans <deploy_dir>/ext
-- Redémarrer le serveur Deploy.
+- Copy the content of the synthetic.xml file into the existing one in <deploy_dir>/ext
+- Copy the content of the xl-rules.xml file into the existing one in <deploy_dir>/ext (if not present create a new one)
+- Copy the newFile directory into <deploy_dir>/ext
+- Restart the Deploy server
 
-Un nouveau type d'artifact est disponible : imsa > File
+A new File type is available in mycompany > File
 
-![Nouveau type](images/file.png)
+![New type](images/file.png)
 
-![Propriétés](images/file2.png)
+New properties:
+
+![Properties](images/file2.png)
+
+---
+Sample:
+
+File with properties:
+
+![Properties](images/properties.png)
+  
+
+![Deployment](images/deployment.png)
 
