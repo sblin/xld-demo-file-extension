@@ -15,11 +15,11 @@ This a sample only, please do not use in production (not designed to manage all 
 
 A new File type is available in mycompany > File
 
-![New type](images/file.png)
+![New type](images/mycompanyfile.png)
 
 New properties:
 
-![Properties](images/file2.png)
+![Properties](images/mycompanyproperties.png)
 
 ---
 Sample:
